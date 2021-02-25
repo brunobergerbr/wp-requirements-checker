@@ -34,7 +34,7 @@ class WP_Version_Checker {
 	public function version_check() {
 		$api_response = get_transient( self::WPVC_API_RESPONSE_OPTION );
 
-		if ( false === $api_response ) {
+		if ( false === $api_response || empty( $api_response ) ) {
 			$api_response = json_decode( $this->request(), true );
 
 			set_transient( self::WPVC_API_RESPONSE_OPTION, $api_response, DAY_IN_SECONDS );
