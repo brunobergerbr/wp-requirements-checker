@@ -1,2 +1,2 @@
-# wp-requirements-checker
-A plugin to check the latest requirements to run WordPress itself.
+# wp-version-checker
+A plugin to check if you're running the latest WordPress version.
